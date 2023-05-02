@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient(100% 100% at 50% 100%, #1F1E1B 21.52%, #1B1A17 100%);
+}
+
+header{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+header > div > h1{
+    font-family: 'Abel', sans-serif;
+    font-size: 2em;
+    color: #fff;
+}
+
+header > div > h1 > span{
+    color: #FF8303;
+    font-weight: lighter;
+}
+
+header > nav > a{
+    margin-left: 2em;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .quem-sou {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.quem-sou > div:first-child {
+    padding-right: 1em;
+    padding-left: 2em;
+}
+
+.quem-sou > div:last-child {
+    padding-left: 1em;
+}
+
+.quem-sou > div > h2 {
+    font-family: 'Inconsolata', monospace;
+    color: #FF8303;
+    font-weight: 900;
+    font-size: 4em;
+}
+
+.quem-sou > div > h3 {
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    margin-top: .50em;
+}
+
+.quem-sou > div > p {
+    color: #fff;
+    font-size: 1.25em;
+    line-height: 1.5;
+    width: 28em;
+    font-family: 'Inconsolata', monospace;
+}
+
+.quem-sou > div > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sobre-desc{
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.texto-sobre{
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+    width: 56.5em;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #21201D;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 250px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .card-name {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+  }
+
+  .conhecimentos{
+    margin-top: 1.5em;
+  }
+
+  .conhecimentos > div > h1{
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    color: #FF8303;
+    font-weight: 700;
+    font-size: 2em;
+  }
+
+  .title-pro{
+    margin: 1.3em 0 1.3em 0;
+    font-family: 'Inconsolata', monospace;
+    color: #FF8303;
+    font-size: 2em;
+  }
+
+  .projetos{
+    padding-bottom: 1.8em;
+  }
+
+  .projetos > div > h1,
+  .projetos > div > ul > li{
+    text-align: center;
+  }
+
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: .80em;
+  }
+
+  footer > div > h2 > span{
+    color:#FF8303;
+    font-weight: bold;
+  }
+
+  footer > div > h2{
+    font-family: 'Inconsolata', monospace;
+    color: #FF8303;
+  }
+
+  .contacts > p, a, img, i{
+    margin-top: 1em;
+    text-decoration: none;
+    color: #FF8303;
+    font-family: 'Inconsolata', monospace;
+  }
+
+  .phrase  > p{
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+    width: 13.313em;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    header > nav {
+      margin-top: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    header > nav > a {
+      margin: 0.5em 0;
+    }
+
+    .quem-sou > div {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .quem-sou > div > img {
+        display: none;
+    }
+
+    .sobre-desc{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5em;
+    }
+
+    .texto-sobre{
+        width: 20em;
+        text-align: justify;
+        font-size: 0.90em;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
