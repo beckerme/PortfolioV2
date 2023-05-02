@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 
 body{
@@ -52,6 +53,9 @@ header > nav > a{
 .quem-sou > div:first-child {
     padding-right: 1em;
     padding-left: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .quem-sou > div:last-child {
@@ -179,6 +183,10 @@ header > nav > a{
     color: #FF8303;
   }
 
+  .contacts {
+    width: 200px;
+  }
+
   .contacts > p, a, img, i{
     margin-top: 1em;
     text-decoration: none;
@@ -234,11 +242,42 @@ header > nav > a{
         font-size: 0.90em;
     }
   }
-  
-  
-  
-  
-  
-  
-  
+
+  @media screen and (max-width: 480px) {
+    .quem-sou{
+        height: 100vh;
+    }
+    
+    .quem-sou > div > p{
+        width: 20em;
+    }
+
+    .sobre-desc{
+        margin-top: -20em;
+    }
+
+    .sobre-desc > div > p{
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    footer > .phrase > p{
+        width: 12em;
+        font-size: .90em;
+    }
+
+    .contacts{
+        margin-left: 2em;
+        width: 10em;
+    }
+
+    .contacts > p > i,
+    .contacts > a > img{
+        display: none;
+    }
+
+    footer > .contacts > h2{
+        margin-bottom: -.5em;
+    }
+  }
   
